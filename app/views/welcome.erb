@@ -1,23 +1,39 @@
-<div class="container">
-  <header><img src="images/corneal-small.png" class="img-responsive main-image"></header>
-  <div class="col-md-8 col-md-offset-2">
-    <h2>Sinatra Template Default Page</h2>
 
-    <div class="content">
-      <p>Welcome to the Sinatra Template! If you're seeing this page, then everything is working
-      as expected. To get started, delete this file (<code>app/views/welcome.erb)</code> and begin adding
-      your own actions to <code>application_controller.rb</code>. For more information, see the <a href="https://github.com/thebrianemory/corneal">README</a>.</p>
-    </div>
+		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+		<style>
+			@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+			body {
+				background: #7f9b4e url(images/bg2.jpg) no-repeat center top;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				background-size: cover;
+			}
+			.container > header h1,
+			.container > header h2 {
+				color: #fff;
+				text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+			}
+		</style>
+        <div class="container">
 
-    <div class="sidebar">
-      <h3>Environment</h3>
-      <ul>
-        <li><b>Ruby:</b> <%= RUBY_VERSION %></li>
-        <li><b>Environment:</b> <%= ENV["RACK_ENV"] %></li>
-        <li><b>Server:</b> <%= @env["SERVER_SOFTWARE"] %></li>
-        <li><b>Port:</b> <%= @env["SERVER_PORT"] %></li>
-      </ul>
-    </div>
 
-  </div>
-</div>
+
+			<section class="main">
+				<form class="form-4">
+				    <h1>Login or Register</h1>
+				    <p>
+				        <label for="login">Username or email</label>
+				        <input type="text" name="login" placeholder="Username or email" required>
+				    </p>
+				    <p>
+				        <label for="password">Password</label>
+				        <input type="password" name='password' placeholder="Password" required>
+				    </p>
+
+				    <p>
+				        <input type="submit" name="submit" value="Continue">
+				    </p>
+				</form>​
+			</section>
+
+        </div>
